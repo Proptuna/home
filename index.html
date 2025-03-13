@@ -180,6 +180,68 @@
             border-color: #E5A800;
         }
         
+        /* MIPIM Conference Banner */
+        .mipim-banner {
+            background: linear-gradient(135deg, #0039A6 0%, #094FB9 100%);
+            color: white;
+            padding: 12px 0;
+            position: relative;
+            z-index: 101;
+        }
+        
+        .mipim-banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            text-align: center;
+        }
+        
+        .mipim-badge {
+            background-color: #FEBB00;
+            color: #0f172a;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        
+        .mipim-banner p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .mipim-cta {
+            display: inline-block;
+            background-color: white;
+            color: #0039A6;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .mipim-cta:hover {
+            background-color: #FEBB00;
+            color: #0f172a;
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 768px) {
+            .mipim-banner {
+                padding: 16px 0;
+            }
+            
+            .mipim-banner p {
+                margin: 8px 0;
+            }
+        }
+        
         /* Hero Section */
         .hero {
             padding: 160px 0 80px;
@@ -774,6 +836,17 @@
     </style>
 </head>
 <body>
+    <!-- MIPIM Conference Banner -->
+    <div class="mipim-banner">
+        <div class="container">
+            <div class="mipim-banner-content">
+                <div class="mipim-badge">MIPIM 2025</div>
+                <p>Welcome to our EU partners! Visit us at MIPIM to discover why Proptuna is Europe's most innovative AI-powered real estate solution.</p>
+                <a href="#contact" class="mipim-cta">Meet Us at MIPIM</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
